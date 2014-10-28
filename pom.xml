@@ -18,14 +18,21 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.11</junit.version>
     <static.files.url.prefix>http://123.57.45.49/</static.files.url.prefix>
+    <spring.core.version>4.1.1.RELEASE</spring.core.version>
+    <spring.orm.version>4.1.1.RELEASE</spring.orm.version>
+    <spring.tx.version>4.1.1.RELEASE</spring.tx.version>
     <dev.database.ip></dev.database.ip>
     <dev.datebase.port></dev.datebase.port>
     <dev.datebase.name></dev.datebase.name>
     <dev.datebase.password></dev.datebase.password>
-    <dev.database.ip></dev.database.ip>
-    <dev.datebase.port></dev.datebase.port>
-    <dev.datebase.name></dev.datebase.name>
-    <dev.datebase.password></dev.datebase.password>
+    <qatest.database.ip></qatest.database.ip>
+    <qatest.datebase.port></qatest.datebase.port>
+    <qatest.datebase.name></qatest.datebase.name>
+    <qatest.datebase.password></qatest.datebase.password>
+     <online.database.ip></online.database.ip>
+    <online.datebase.port></online.datebase.port>
+    <online.datebase.name></online.datebase.name>
+    <online.datebase.password></online.datebase.password>
   </properties>
 
   <dependencies>

@@ -29,10 +29,10 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<dubbo.zookeeper.address>zookeeper://127.0.0.1:2181</dubbo.zookeeper.address>
-				<dubbo.zookeeper.protocol>dubbo</dubbo.zookeeper.protocol>
-				<dubbo.protocol.name>dubbo</dubbo.protocol.name>
-				<dubbo.protocol.port>${dubbo.protocol.common.port}</dubbo.protocol.port>
+				<database.ip>${dev.database.ip}</database.ip>
+				<database.port>${dev.database.port}</database.port>
+				<database.name>${dev.database.name}</database.name>
+				<database.passwd>${dev.database.port}</database.passwd>
 			</properties>
 		</profile>
 		<!-- 持续集成环境  -->
@@ -42,10 +42,10 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<dubbo.zookeeper.address>zookeeper://${qatest.zookeeper.ip}:2181</dubbo.zookeeper.address>
-				<dubbo.zookeeper.protocol>dubbo</dubbo.zookeeper.protocol>
-				<dubbo.protocol.name>dubbo</dubbo.protocol.name>
-				<dubbo.protocol.port>${dubbo.protocol.common.port}</dubbo.protocol.port>
+				<database.ip>${qatest.database.ip}</database.ip>
+				<database.port>${qatest.database.ip}</database.port>
+				<database.name>${qatest.database.ip}</database.name>
+				<database.passwd>${qatest.database.ip}</database.passwd>
 			</properties>
 		</profile>
 		<!-- 生产环境  -->
@@ -55,10 +55,10 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<dubbo.zookeeper.address>zookeeper://127.0.0.1:2181</dubbo.zookeeper.address>
-				<dubbo.zookeeper.protocol>dubbo</dubbo.zookeeper.protocol>
-				<dubbo.protocol.name>dubbo</dubbo.protocol.name>
-				<dubbo.protocol.port>${dubbo.protocol.common.port}</dubbo.protocol.port>
+				<database.ip>${online.database.ip}</database.ip>
+				<database.port>${online.database.ip}</database.port>
+				<database.name>${online.database.ip}</database.name>
+				<database.passwd>${online.database.ip}</database.passwd>
 			</properties>
 		</profile>
 	</profiles>
@@ -69,5 +69,35 @@
       <artifactId>shuo-util</artifactId>
       <version>${project.version}</version>
     </dependency>
-  </dependencies>
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>4.1.1.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>4.1.1.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>4.1.1.RELEASE</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-test</artifactId>
+	    <version>4.1.1.RELEASE</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>4.1.1.RELEASE</version>
+		</dependency>
+		<dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-mongodb</artifactId>
+        <version>1.6.0.RELEASE</version>
+    </dependency>
+	 </dependencies>
 </project>
