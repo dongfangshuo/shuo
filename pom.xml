@@ -17,6 +17,15 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.11</junit.version>
+    <static.files.url.prefix>http://123.57.45.49/</static.files.url.prefix>
+    <dev.database.ip></dev.database.ip>
+    <dev.datebase.port></dev.datebase.port>
+    <dev.datebase.name></dev.datebase.name>
+    <dev.datebase.password></dev.datebase.password>
+    <dev.database.ip></dev.database.ip>
+    <dev.datebase.port></dev.datebase.port>
+    <dev.datebase.name></dev.datebase.name>
+    <dev.datebase.password></dev.datebase.password>
   </properties>
 
   <dependencies>
