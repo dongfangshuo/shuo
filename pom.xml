@@ -54,7 +54,20 @@
 	        <target>1.7</target>  
 	        <encoding>UTF-8</encoding>   
 	      </configuration>  
-	    </plugin>  
+	    </plugin>
+	    <plugin> 
+              <groupId>org.codehaus.mojo</groupId> 
+              <artifactId>findbugs-maven-plugin</artifactId> 
+              <version>2.5.1</version> 
+              <configuration> 
+                  <threshold>High</threshold>
+                  <effort>Default</effort>
+                  <findbugsXmlOutput>true</findbugsXmlOutput>
+                 <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+                  <xmlOutput>true</xmlOutput>
+                  <formats><format>html</format></formats>
+              </configuration> 
+           </plugin>  
   	</plugins>
   </build>
 </project>
