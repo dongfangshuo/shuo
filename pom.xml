@@ -55,6 +55,7 @@
 	        <encoding>UTF-8</encoding>   
 	      </configuration>  
 	    </plugin>
+	    <!-- 
 	    <plugin> 
               <groupId>org.codehaus.mojo</groupId> 
               <artifactId>findbugs-maven-plugin</artifactId> 
@@ -68,6 +69,7 @@
                   <formats><format>html</format></formats>
               </configuration> 
            </plugin>  
+          -->
   	</plugins>
   </build>
 </project>
